@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Instructors — Department of Air Warfare</title>
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div id="viewport">
+ <div id="stage">
+
+  <!-- shared chrome -->
+  <div id="chrome">
+    <button id="btn-back" class="chrome-btn" type="button" aria-label="Back">
+      <svg viewBox="0 0 24 24" width="30" height="30"><path d="M15 4 L7 12 L15 20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <div id="crumb">Instructors</div>
+    <div class="chrome-right">
+      <button id="btn-search" class="chrome-btn" type="button" aria-label="Search">
+        <svg viewBox="0 0 24 24" width="30" height="30"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M15.5 15.5 L21 21" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+      </button>
+      <button id="btn-close" class="chrome-btn danger" type="button" aria-label="Close kiosk">
+        <svg viewBox="0 0 24 24" width="30" height="30"><path d="M5 5 L19 19 M19 5 L5 19" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- 1 · threshold -->
+  <section id="threshold" class="screen active">
+    <div class="th-haze"></div>
+    <div class="th-glow"></div>
+    <div class="th-line"></div>
+    <div class="th-plates" aria-hidden="true"></div>
+    <div class="th-title">
+      <div class="th-eyebrow">Department of Air Warfare</div>
+      <h1>Instructors</h1>
+      <div class="th-sub">Armed Forces Command and Staff College · Jaji</div>
+      <div class="th-rule"><span></span><i></i><span></span></div>
+      <div class="th-hint"><span class="th-pulse"></span>Touch to enter the corridor</div>
+    </div>
+    <div class="th-foot">A hall of honour · 1978 — to date</div>
+  </section>
+
+  <!-- 2 · corridor -->
+  <section id="corridor" class="screen">
+    <div id="tunnel"><div id="ring"></div><div class="tun-line"></div><div class="tun-vignette"></div></div>
+    <div id="gatebar"></div>
+  </section>
+
+  <!-- 3 · chamber -->
+  <section id="chamber" class="screen">
+    <header id="ch-head">
+      <div>
+        <div id="ch-kicker" class="kicker"></div>
+        <h2 id="ch-title"></h2>
+        <p id="ch-blurb"></p>
+      </div>
+      <div id="ch-count" class="count-pill"></div>
+    </header>
+    <div id="ch-decades"></div>
+    <div id="ch-grid"></div>
+    <footer id="ch-pager">
+      <button id="ch-prev" class="pager-btn" type="button" aria-label="Previous page">
+        <svg viewBox="0 0 24 24" width="34" height="34"><path d="M15 4 L7 12 L15 20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <div id="ch-pageinfo"></div>
+      <button id="ch-next" class="pager-btn" type="button" aria-label="Next page">
+        <svg viewBox="0 0 24 24" width="34" height="34"><path d="M9 4 L17 12 L9 20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </footer>
+  </section>
+
+  <!-- 4 · person -->
+  <section id="person" class="screen">
+    <div id="ps-plate">
+      <div id="ps-frame">
+        <div id="ps-epaulette"><img id="ps-img" alt="" draggable="false"><div id="ps-mono"></div></div>
+        <div id="ps-body">
+          <div id="ps-office" class="kicker"></div>
+          <div id="ps-rank"></div>
+          <div id="ps-name"></div>
+          <div id="ps-tenure"></div>
+          <div id="ps-meta"></div>
+        </div>
+      </div>
+      <div id="ps-nav">
+        <button id="ps-prev" class="nav-btn" type="button" aria-label="Previous person">
+          <svg viewBox="0 0 24 24" width="36" height="36"><path d="M15 4 L7 12 L15 20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span>Prev</span>
+        </button>
+        <div id="ps-pos"></div>
+        <button id="ps-next" class="nav-btn" type="button" aria-label="Next person">
+          <span>Next</span>
+          <svg viewBox="0 0 24 24" width="36" height="36"><path d="M9 4 L17 12 L9 20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 · search -->
+  <section id="search" class="screen">
+    <div id="sc-panel">
+      <div id="sc-top">
+        <div id="sc-query-wrap"><span id="sc-query">Type a name</span><span id="sc-caret"></span></div>
+        <button id="sc-clear" type="button">Clear</button>
+      </div>
+      <div id="sc-results"></div>
+      <div id="sc-kbd"></div>
+    </div>
+  </section>
+
+  <div id="toast"></div>
+ </div>
+</div>
+<script src="data/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
